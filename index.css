@@ -1,0 +1,179 @@
+body {
+  background: radial-gradient(ellipse at center, #ffffff 0%,#d3d3d3 100%);
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+body > div {
+  width: 100%;
+  text-align: center;
+}
+
+/* #readout {
+  font-size: 12rem;
+  font-family: sans-serif;
+  line-height: 12rem;
+} */
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+button:focus {
+  outline: none;
+}
+
+#show-mph {
+  border-radius: 10px 0px 0 10px;
+  margin-right: -6px;
+}
+
+#show-kmh {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.selected {
+  background-color: hotpink;
+  color: #fff;
+}
+
+#start {
+  margin-top: 1rem;
+  background-color: hsl(114, 96%, 92%);
+}
+
+#start.selected {
+  background-color: hsl(0, 96%, 92%);
+  color: #000;
+}
+
+body.dark {
+  background: radial-gradient(ellipse at center, #1b1b1b 0%, #000000 100%);
+  color: #01a003;
+}
+
+body.dark button {
+  background-color: #2a2a2a;
+  border: 1px solid #01a003;
+  color: #01a003;
+}
+
+body.dark .selected {
+  background-color: #01a003;
+  color: #fff;
+}
+
+body.dark #start {
+  margin-top: 1rem;
+  background-color: hsl(114, 100%, 18%);
+}
+
+body.dark #start.selected {
+  background-color: hsl(0, 100%, 18%);
+  color: #fff;
+  border-color: hsl(15, 100%, 18%);
+}
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+} */
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  color: #333;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #777;
+  margin: 5px 0;
+}
+
+#location {
+  font-weight: bold;
+}
+
+#currentspeed {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00aaff;
+}
+
+#safespeed, #designspeed {
+  font-weight: bold;
+  color: #00aa00;
+}
+
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+ .modal-content {
+  background-color: #ffdddd; /* Light red background */
+  border: 1px solid #f44336; /* Red border */
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  background-color: #f44336; /* Red background */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Additional styling for the message */
+#modal-message {
+  font-size: 18px;
+  color: #333;
+}
